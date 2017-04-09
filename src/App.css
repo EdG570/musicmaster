@@ -1,0 +1,128 @@
+body {
+  background: #000;
+  color: #fff;
+  letter-spacing: 1px;
+}
+
+.App {
+  text-align: center;
+  padding: 5%;
+}
+
+.App-title {
+  font-size: 26px;
+  margin-bottom: 0.5em;
+}
+
+.app-form {
+  max-width: 60%;
+  margin: 0 auto;
+  margin-bottom: 2em;
+}
+
+.profile {
+  display: flex;
+  justify-content: center;
+}
+
+.profile-info {
+  margin-left: 10px;
+  text-align: left;
+}
+
+.profile-img {
+  max-width: 150px;
+  max-height: 150px;
+  border: 3px solid #fff;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.profile-name {
+  font-size: 26px;
+}
+
+.profile-genres {
+  color: #ddd;
+}
+
+.profile-followers,
+.profile-genres {
+  font-size: 18px;
+  font-weight: 200;
+}
+
+.gallery {
+  max-width: 1200px;
+  margin: 0 auto;
+  margin-top: 2em;
+}
+
+.gallery-track {
+  display: inline-block;
+  width: 220px;
+  height: 220px;
+  border-radius: 3px;
+  margin: 10px;
+  text-align: left;
+  cursor: pointer;
+  position: relative;
+}
+
+.track-img {
+  width: 220px;
+  height: 220px;
+  border: 3px solid #fff;
+  border-radius: 3px;
+  object-fit: cover;
+  position: absolute;
+}
+
+.track-text {
+  background-color: #000;
+  color: #fff;
+  opacity: 0.6;
+  width: 214px;
+  margin-left: 3px;
+  text-align: center;
+  position: abolute;
+  bottom: 0;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.track-play {
+  position: absolute;
+  width: 220px;
+  height: 220px;
+}
+
+.track-play-inner {
+  position: absolute;
+  text-align: center;
+  font-size: 25px;
+  background-color: #000;
+  border-radius: 30px;
+  width: 60px;
+  height: 60px;
+  color: #fff;
+  padding-top: 13px;
+  margin-left: 80px;
+  margin-top: 80px;
+  opacity: 0;
+}
+
+.track-play-inner:hover {
+  opacity: 0.8;
+  animation-name: fade-in;
+  animation-duration: 0.5s;
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 0.8;
+  }
+}
